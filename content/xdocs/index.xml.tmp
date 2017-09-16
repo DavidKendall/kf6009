@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V2.0//EN" "http://forrest.apache.org/dtd/document-v20.dtd">
+<document> 
+  <header> 
+    <title>CM0604 Embedded Systems Specification and Design</title> 
+  </header> 
+<body> 
+
+<p>
+<img class="floatright"
+     src="images/cm604_image.png" 
+     alt="Embedded Systems Modelling Image"
+     width="400"/>
+<p>
+<strong> This page is also the module page for EN0727 Specification and Design of Embedded Systems.</strong>
+</p>
+
+This module is designed to serve as an introduction to formal and
+object-oriented methods for specifying, designing and reasoning about
+embedded systems. The module uses state-of-the-art tools and
+techniques, including VisualState, SPIN and UPPAAL. It emphasises the
+importance of constructing and analysing models in the early stages of
+system development.
+
+<br/><br/>
+
+The main ideas are communicated in a series of 12 lectures. The
+laboratory sessions are used to put these ideas into practice in a
+variety of modelling and analysis exercises. By the end of the module,
+you should be able to take an informal specification of an embedded
+system, construct a formal/object-oriented model of (part of) a design
+and reason about the likely behaviour of the system. The understanding
+gained in this process can be invaluable in the implementation of a
+reliable system.
+
+<br/><br/> 
+
+The principles and techniques taught in this module are used
+extensively in the modules CM034 Industrial Case Project and
+EN0728 Embedded Systems Case Project.
+</p>
+
+
+<section id="news">
+<title>News</title>
+<p>
+<em>02-10-2008, 10.20</em><br/>
+<strong>Lab sessions</strong><br/>
+Please note that the only lab session for M.Sc. students for this
+module is on Tuesday in PB F1 from 09.00 to 11.00.
+</p>
+
+<p>
+There is no lab session on Thursday afternoons - despite what the
+timetable may show.
+</p>
+
+<p>
+The lab session for B.Sc. students timetabled for Wednesday at 09.00
+has been merged with the Tuesday lab session at 11.00. All B.Sc. students
+should attend the Tuesday lab session only.
+</p>
+
+<hr/>
+
+<p>
+<em>29-09-2008, 23.35</em><br/>
+<strong>Start of teaching</strong><br/>
+Teaching starts on Tue 30 September 2008.
+</p>
+<!--
+<p>
+<strong>Revision Session</strong>
+A revision session has been arranged at 11.00 a.m. on Fri 12th Jan 2007 in 
+A004 Ellison Building. If you have any last minute questions or problems
+that you would like to discuss, please attend.
+</p>
+-->
+
+<!--
+<p>
+<strong><a href="ext:ra/assgn">Assignment Specification Published</a></strong> 8th November 2007
+</p>
+
+<p>
+The assignment specification is now available. The due date for submission
+of the work is <strong>13th December 2007 @ 15.00</strong>. Please address
+any queries about the specification to 
+<a href="mailto:david.kendall@northumbria.ac.uk?subject=Assignment Specification 2006">David Kendall</a>.
+</p>
+-->
+</section>
+
+
+<section id="team">
+<title>Module Team</title>
+<p/>
+<dl>
+<dt><strong>Module Tutor</strong></dt>
+<dd><a href="ext:kendall">David Kendall</a>
+david.kendall@northumbria.ac.uk
+</dd>
+<dt><strong>Lecturer</strong></dt>
+<dd><a href="ext:gee">David Gee</a>
+david.gee@northumbria.ac.uk
+</dd>
+</dl>
+</section>
+
+<section id="teaching">
+<title>Teaching Arrangements</title>
+<p>
+<strong>Lecture</strong> Fri 10.00 - 12.00 EB A411 (All)<br/>
+<strong>Lab/Seminar</strong> Tue 09.00 - 11.00 PB Lab F1 (M.Sc. only)<br/>
+<strong>Lab/Seminar</strong> Tue 11.00 - 13.00 PB Lab F1 (B.Sc. only)<br/>
+</p>
+</section>
+
+<section id="synopsis">
+<title>Synopsis</title>
+<p>
+The aim of the module is to provide an understanding of the theory and
+practice of modelling, specification and analysis in the design of
+embedded systems.
+</p>
+<p>
+On completion of this module, students will be able to:
+</p>
+<ol>
+<li>Evaluate the advantages and disadvantages of the application of
+formal and object-oriented methods in the development of embedded
+systems, and justify their use where appropriate.</li>
+
+<li>Construct and evaluate formal and object-oriented models of a
+variety of small embedded systems.</li>
+
+<li>Compose formal specifications of system properties and analyse
+system models with respect to them.</li>
+
+<li>Identify, apply and evaluate appropriate software tools to
+support the construction and analysis of formal and object-oriented
+system models and properties.</li>
+</ol>
+
+<!--
+<p>
+[<a href="http://information.unn.ac.uk/apdb/unitdescriptor.asp?UnitCode=CM604&#38;AcademicYear=2005">Module Descriptor</a>]
+</p>
+-->
+</section>
+
+
+<section id="plan">
+<title>Teaching Plan</title>
+<p>
+The following is a <em>provisional</em> guide to the organisation of
+the module for this year. These arrangements are subject to
+change during the course of the module.
+</p>
+<table>
+<tr>
+<th>Week</th> <th>W/c</th> <th>Lecture</th> <th>Practical</th>
+</tr>
+
+<tr>
+<td><strong>1</strong></td> <td>29-Sep</td> 
+
+<td>Module overview. Introduction to Embedded Systems Specification
+&#38; Design; Formal Modelling tools. 
+[<a href="ext:ra/lec01">Slides</a>]
+<br/>
+<em>Required Reading:</em> 
+[<a href="site:reading/rus95">RUS95</a>],
+[<a href="site:reading/sta95">STA95</a>]
+</td>
+
+<td> The SPIN modelling tool and its PROMELA modelling and
+specification language 
+[<a href="ext:ra/spinintro">Slides</a>]
+[<a href="site:exercises/ex01">Exercises</a>]
+</td>
+</tr>
+
+<tr>
+<td><strong>2</strong></td> <td> 06-Oct </td> 
+
+<td>Modelling and Specification with Finite State Automata Part I
+[<a href="ext:ra/lec02">Slides</a>]
+</td>
+
+<td> More PROMELA. Checking safety properties with SPIN;
+[<a href="ext:ra/spinintro">Slides</a>]
+[<a href="site:exercises/ex02">Exercises</a>]
+</td>
+</tr>
+
+<tr>
+<td><strong>3</strong></td> <td> 13-Oct </td> 
+
+<td>Modelling and Specification with Finite State Automata Part II
+[<a href="ext:ra/lec03">Slides</a>]
+[<a href="ext:ra/mutex1">Mutex model</a>]
+</td>
+
+<td>  Checking liveness properties with SPIN;
+[<a href="site:exercises/ex03">Exercises</a>]
+</td>
+</tr>
+
+<tr><td><strong>4</strong></td> <td> 21-Oct </td> 
+
+<td>Temporal logic. Specification patterns. 
+[<a href="ext:ra/lec04">Slides</a>]<br/>
+<em>Required Reading:</em> 
+[<a href="site:reading/dac99">DAC99</a>]
+[<a href="site:reading/sac03">SAC03</a>]
+</td>
+
+<td> Temporal Logic Specification and Analysis 
+[<a href="site:exercises/ex04">Exercises</a>]
+<!--
+[<a href="ext:ra/solutions_1-4">Outline solutions (1-4)</a>]
+-->
+</td>
+</tr>
+
+
+<tr><td><strong>5</strong></td> <td> 27-Oct </td>
+
+<td>Introducing VisualState: What is VisualState? VisualState's
+version of statecharts. The design approach. Example: home security
+system.
+[<a href="ext:ra/lec05">Slides</a>]
+<!--
+[<a href="ext:ra/lec05S">Solution to the exercise</a>]
+-->
+</td>
+
+<td> Introduction to VisualState. Exercise: Car Compartment
+Light. 
+[<a href="ext:ra/lab05">Exercises</a>]
+</td></tr>
+
+<tr><td><strong>6</strong></td> <td> 03-Nov </td> <td>Further Visual
+State: Verification &#38; Validation. Using the verification tools and
+the Validator.
+[<a href="ext:ra/lec06">Slides</a>]
+</td> 
+
+<td> Further VisualState exercises, including
+Validation &#38; Verification. 
+[<a href="ext:ra/lab06">Exercises</a>]
+<!--
+[<a href="ext:ra/carlight2">Model Solution</a>]
+-->
+</td>
+</tr>
+
+<tr><td><strong>7</strong></td> <td> 10-Nov </td> 
+
+<td>Visual State Implementation &#38; Prototyping Tools.
+[<a href="ext:ra/lec07">Slides</a>]
+[<a href="ext:ra/crossing2">Example</a>]
+</td> 
+
+<td> Further VisualState exercises, including code generation. 
+[<a href="ext:ra/lab07">Exercises</a>]
+</td>
+</tr>
+
+
+<tr>
+<td><strong>8</strong></td> <td> 17-Nov </td> 
+
+<td>Overview of Structured &#38; Object-Oriented Methods: Why use
+structured and OO methods? Standard methods: Ward &#38; Mellor,
+UML. Extensions for Real-Time Systems. State transition
+diagrams. Reducing STD complexity.
+[<a href="ext:ra/lec08">Slides</a>]
+</td>
+
+<td> Applying methods to a simple example. </td>
+
+</tr>
+
+<tr>
+<td><strong>9</strong></td> <td> 24-Nov </td> 
+
+<td>Timed Automata and Timed Transition Systems
+[<a href="ext:ra/lec09">Slides</a>]
+<br/>
+<em>Required Reading:</em> 
+[<a href="ext:ra/uppaalTutorial">Uppaal Tutorial</a>]
+[<a href="site:reading/lev95">LEV95</a>]
+</td> 
+
+<td> Introduction to UPPAAL <br/>
+[<a href="ext:ra/lab09">Exercises</a>] 
+</td>
+</tr>
+
+<tr>
+<td><strong>10</strong></td> <td> 01-Dec </td> 
+
+<td>Networks of Timed Automata. Specifying real-time properties
+[<a href="ext:ra/lec10">Slides</a>]
+<br/>
+<em>Required Reading:</em> 
+[<a href="site:reading/hol01">HOL01</a>]
+</td> 
+
+<td> Modelling a box sorter <br/>
+[<a href="ext:ra/lab10">Exercises</a>] 
+[<a href="ext:ra/lab10model">Box sorter model</a>] 
+</td>
+</tr>
+
+<tr>
+<td><strong>11</strong></td> <td> 08-Dec </td> 
+
+<td>Principles of automata-theoretic verification of real-time systems
+[<a href="ext:ra/lec11">Slides</a>]
+</td> 
+
+<td> Modelling and verifying a real-time communication protocol 
+[<a href="ext:ra/lab11">Exercises</a>] 
+[<a href="ext:ra/lab11model">TTP model</a>] 
+</td>
+</tr>
+
+<tr>
+<td><strong>12</strong></td> <td> 15-Dec </td> 
+
+<td>Revision</td> 
+
+<td> The Vikings problem 
+[<a href="ext:ra/lab12">Exercises</a>] 
+[<a href="ext:ra/lab12model">Vikings model</a>] 
+</td>
+</tr>
+</table>
+<note>
+In addition to the taught sessions, you are expected to undertake independent
+and directed learning. On average, you should be spending 10 to 12 hours per
+week on this module.
+</note>
+</section>
+
+
+<section id="assessment">
+<title>Assessment</title>
+<p>
+Summative assessment comprises:
+</p>
+<ol>
+<li> a substantial exercise in specification, design and analysis in
+which students will be required to demonstrate a practical ability to
+apply appropriate languages, techniques and tools, and</li>
+<li> an examination in which students will be required to demonstrate
+a grasp of fundamental concepts and a critical understanding of a
+variety of approaches to the specification and design of embedded
+systems.</li>
+</ol>
+
+<!--
+<ul>
+<li>
+<a href="ext:ra/assgn">Assignment Specification</a>
+</li>
+</ul>
+-->
+
+<p id="pastpapers">
+<strong>Past Exam Papers:</strong>
+[<a href="ext:ra/exam2003-04">2003-04</a>],
+[<a href="ext:ra/exam2004-05">2004-05</a>],
+[<a href="ext:ra/exam2005-06">2005-06</a>],
+[<a href="ext:ra/exam2006-07">2006-07</a>],
+[<a href="ext:ra/exam2007-08">2007-08</a>]
+</p>
+</section>
+
+<section id="reading">
+<title>Recommended Reading</title>
+<p>
+There is no essential text for this module. Below is a list of references to
+texts and other resources that are relevant to the content of the module.
+You may find many of them useful and/or interesting. In addition, you are 
+required to undertake some background reading about the use of formal methods
+in the development of embedded and critical systems. 
+[<a href="site:reading/">More</a>]
+</p>
+<ul>
+<li>
+Alavi, H. et al., <a href="ext:specpatterns">SPEC Patterns</a>, 2005</li>
+<li>
+Barland, I.; Vardi, M.; Greiner, J. Model Checking Concurrent
+Programs, Connexions Web site. <a href="http://cnx.org/content/col10294/1.3/">http://cnx.org/content/col10294/1.3/</a>,
+Oct 27, 2005.
+</li>
+<li>
+Behrmann,G., David,A., and Larsen,K. 
+<a href="http://www.it.uu.se/research/group/darts/papers/texts/new-tutorial.pdf">A Tutorial on Uppaal</a>, Department of Computer Science, Aalborg University, Denmark, 2004
+</li>
+<li>
+Berard, B. et al., Systems and Software Verification: Model Checking
+Techniques and Tools, Springer Verlag, 2001</li>
+<li>
+Cooling, J.E. Software Engineering for Real-Time
+Systems. Addison-Wesley, 2003.</li>
+<li>
+Douglass, B.P. Real-Time UML. Addison-Wesley, 1999.</li>
+<li>
+Douglass, B.P. Doing Hard Time. Addison-Wesley, 1999.</li>
+<li>
+Gomaa, H. Designing Concurrent Distributed and Real Time Applications
+with UML. Addison-Wesley, 2000.</li>
+<li>Harel, D.
+<a href="http://www.wisdom.weizmann.ac.il/~dharel/SCANNED.PAPERS/VisualFormalisms.pdf"><em>On Visual Formalisms</em></a> and <a href="http://www.wisdom.weizmann.ac.il/~dharel/SCANNED.PAPERS/BitingTheSilverBullet.pdf"><em>Biting the Silver Bullet: Toward a Brighter Future for System Development</em></a></li>
+<li> 
+Holzmann, G., The SPIN Model Checker: Primer and Reference Manual, 
+Addison Wesley, 2003, ISBN 0321228626</li>
+<li>Huckle, T.
+<a href="ext:bugse">Collection of Software Bugs</a>, 2004</li>
+<li>Huth, M., Ryan, M., <em>Logic in Computer Science: Modelling and 
+  Reasoning about Systems</em> 2nd edition, Cambridge University Press, 2004.
+</li>
+<li>
+Technical journals and conference papers, e.g. Computer Aided
+Verification (CAV), Tools and Algorithms for the Construction of
+Systems (TACAS)</li>
+
+</ul>
+</section>
+
+<section id="resources">
+<title>Other resources</title>
+<p>
+<a href="ext:spin">
+<img class="floatright" src="site:images/spinlogo" 
+     alt="SPIN Logo"    width="80" /></a>
+</p>
+<p>
+<strong><a href="ext:spin">SPIN</a></strong><br/>
+"Spin is a popular open-source software tool, used by thousands of
+people worldwide, that can be used for the formal verification of
+distributed software systems. The tool was developed at Bell Labs in
+the original Unix group of the Computing Sciences Research Center,
+starting in 1980. The software has been available freely since 1991,
+and continues to evolve to keep pace with new developments in the
+field. In April 2002 the tool was awarded the prestigious System
+Software Award for 2001 by the ACM." [<a href="ext:spin">Link</a>]
+</p>
+<p>
+The main focus of this module, in weeks 1-4, is on the theory and
+practical application of this tool to the modelling and analysis of
+embedded systems. It is essential that you use the tool extensively on
+a variety of lab exercises. The tool is installed in PB Lab F1 on the
+Linux machines. It is also available free for use on your own machines
+-- see the <a href="ext:spin/download">download</a> instructions.
+</p>
+
+<ul>
+<li><a href="ext:ra/spinstart">Getting Started with SPIN</a></li>
+<li><a href="ext:ra/spinbasic">Basic SPIN Manual</a></li>
+<li><a href="ext:ra/spinconcise">Concise PROMELA Reference</a></li>
+</ul>
+
+<p>
+<strong><a href="ext:uppaal">UPPAAL</a></strong><br/>
+
+"Uppaal is an integrated tool environment for modeling, validation and
+verification of real-time systems modeled as networks of timed
+automata, extended with data types (bounded integers, arrays, etc.).
+</p>
+<p>
+The tool is developed in collaboration between the Department of
+Information Technology at Uppsala University, Sweden and the
+Department of Computer Science at Aalborg University in Denmark."
+[<a href="ext:uppaal">Link</a>]
+</p>
+<p>
+The main focus of this module, in weeks 9-12, is on the theory and
+practical application of this tool to the modelling and analysis of
+embedded systems. It is essential that you use the tool extensively on
+a variety of lab exercises. The tool is installed in PB Lab F1 on the
+Linux machines. It is also available free for use on your own machines
+-- get the <a href="ext:ra/uppaal">local Uppaal installation
+archive</a>.  There is a <a
+href="ext:ra/uppaalTutorial">tutorial</a> that gives a good
+introduction to the theory and practice of modelling with timed
+automata and analysis with the Uppaal tool.
+</p>
+
+<p>
+<strong><a href="http://www.iar.com/index.php?show=1014_ENG&amp;&amp;page_anchor=http://www.iar.com/p1014/p1014_eng.php">visualSTATE</a></strong><br/>
+Get the <a href="http://cgweb1.unn.ac.uk/SubjectAreaResources/CM604/vs.exe">local copy</a> of the 20 state evaluation version of visualSTATE. This is a self-installing executable for use with Windows XP. It should be adequate for
+building the models in the exercises and assignments for this module. 
+</p>
+</section>
+
+<section id="ethics">
+<title>Professionlism, ethics and standards</title>
+
+<ul>
+<li>
+<a href="http://www.acm.org/constitution/code.html">ACM Code of Conduct</a>
+</li>
+
+<li>
+<a href="http://www.bcs.org/server.php?show=nav.6029">BCS Code of Conduct and Good Practice</a>
+</li>
+
+<li>
+<a href="http://www.ieee.org/portal/pages/iportals/aboutus/ethics/code.html">IEEE Code of Ethics</a>
+</li>
+
+<li> European Organisation for Civil Aviation Equipment.
+<a href="http://www.eurocae.org">Software Considerations in Airborne
+Systems and Equipment Certification (ED-12B/DO-178B)</a>, EUROCAE, 17
+rue Hamelin, F-75783 Paris Cedex 16, France, (1992).
+</li>
+
+<li>
+Hennell,M., Woodcock,J. and Woodward,M., <a href="http://www.ldra.co.uk/nologindownload.asp?id=99">The Safety Integrity Levels Of IEC 61508 And A Revised Proposal</a>, Embedded Systems Show, 2006. (<a href="ext:ra/hww06">Local copy</a>)
+</li>
+
+<li>Redmill,F., <a href="http://www.csr.ncl.ac.uk/FELIX_Web/4B.IEC%2061508%20Intro.pdf">An Introduction To The Safety Standard IEC 61508</a>, Journal of the System Safety Society, Volume 35, No. 1, 1999
+</li>
+
+</ul>
+
+</section>
+</body>
+</document>

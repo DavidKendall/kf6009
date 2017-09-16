@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2002-2004 The Apache Software Foundation or its licensors,
+  as applicable.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<!--
+Forrest site.xml
+
+This file contains an outline of the site's information content.  It is used to:
+- Generate the website menus (though these can be overridden - see docs)
+- Provide semantic, location-independent aliases for internal 'site:' URIs, eg
+<link href="site:changes"> links to changes.html (or ../changes.html if in
+  subdir).
+- Provide aliases for external URLs in the external-refs section.  Eg, <link
+  href="ext:cocoon"> links to http://cocoon.apache.org/ 
+
+See http://forrest.apache.org/docs/linking.html for more info
+-->
+
+<site label="CM604" href="" xmlns="http://apache.org/forrest/linkmap/1.0" tab="">
+   <!-- Note: No matter what you configure here, Forrest will always try to load
+       index.html when you request http://yourHost/.
+       'How can I use a start-up-page other than index.html?' in the FAQs has more 
+       information tells you how to change that. 
+   -->
+
+  <home label="Module Home" href="index.html">
+    <dummy label=""/>
+  </home> 
+
+  <team label="Module Team" href="index.html#team">
+    <dummy label=""/>
+  </team>
+
+  <arrangements label="Teaching Arrangements" href="index.html#teaching"> 
+    <dummy label=""/>
+  </arrangements>
+
+  <synopsis label="Synopsis" href="index.html#synopsis">
+    <dummy label=""/>
+  </synopsis>
+
+  <plan label="Teaching Plan" href="index.html#plan">
+    <dummy label=""/>
+  </plan>
+
+  <assessment label="Assessment" href="index.html#assessment">
+    <dummy label=""/>
+  </assessment>
+
+  <rec_reading label="Reading" href="index.html#reading">
+    <dummy label=""/>
+  </rec_reading>
+
+  <resources label="Resources" href="index.html#resources">
+    <dummy label=""/>
+  </resources>
+
+  <reading href="reading.html">
+    <dummy label=""/>
+    <dac99 href="#dac99"/>
+    <hol01 href="#hol01"/>
+    <hol14 href="#hol14"/>
+    <lev95 href="#lev95"/>
+    <rus95 href="#rus95"/>
+    <sac03 href="#sac03"/>
+    <sta95 href="#sta95"/>
+  </reading>
+
+  <exercises href="">
+    <ex01 href="ex01.html"/>
+    <ex02 href="ex02.html"/>
+    <ex03 href="ex03.html"/>
+    <ex04 href="ex04.html"/>
+  </exercises> 
+
+
+  <!--
+  The href must be wholesite.html/pdf  You can change the labels and node names
+  <all label="All">
+    <whole_site_html label="Whole Site HTML" href="wholesite.html"/>
+    <whole_site_pdf label="Whole Site PDF" href="wholesite.pdf"/>
+  </all>
+  -->
+
+  <images href="images/">
+    <built-with-forrest-button href="built-with-forrest-button.png"/>
+    <get_java href="get_java_blue-button.gif"/>
+    <ibilio href="ibiblio_logo.gif"/>
+    <penguin href="officialpenguin.gif"/>
+    <spinlogo href="spinlogo2_medium.gif"/>
+  </images>
+
+  <external-refs>
+    <bugse href="http://www5.in.tum.de/~huckle/bugse.html"/>
+    <brockway href="http://computing.northumbria.ac.uk/staff/cgmb3"/>
+    <kendall href="http://computing.northumbria.ac.uk/staff/cgdk2"/>
+    <specpatterns href="http://patterns.projects.cis.ksu.edu/"/>
+    <spin href="http://spinroot.com/">
+      <download href="spin/Man/README.html"/>
+    </spin>
+    <sta95 href="http://spinroot.com/spin/Doc/course/Standish_Survey.htm"/>
+    <therac25 href="http://www.computingcases.org/case_materials/therac/case_history/Case%20History.html"/>
+    <uppaal href="http://www.uppaal.com/"/>
+
+    <!-- Restricted Access -->
+<!--
+    <ra href="http://localhost/~cgdk2/ra/">
+-->
+    <ra href="http://cgweb1.northumbria.ac.uk/SubjectAreaResources/">
+<!--
+    <ra href="http://www.hesabu.net/cm0604/assets/ra/">
+-->
+<!--
+    <ra href="http://dk.offcampusnetwork.co.uk/ra/">
+-->
+      <CM604 href="CM604/">
+        <and08 href="and08.pdf"/>
+        <assgn    href="assgn.pdf"/>
+        <assgn604 href="cm0604_assgn.pdf"/>
+        <assgn727 href="en0727_assgn.pdf"/>
+        <carlight2 href="CarLight2.zip"/>
+        <casestudy href="case_study.zip"/>
+        <crossing2 href="Crossing2.zip"/>
+        <dac99 href="dac99.pdf"/>
+        <exam2003-04 href="exam2003-04.pdf"/>
+        <exam2004-05 href="exam2004-05.pdf"/>
+        <exam2005-06 href="exam2005-06.pdf"/>
+        <exam2006-07 href="exam2006-07.pdf"/>
+        <exam2007-08 href="exam2007-08.pdf"/>
+        <exam2008-09 href="exam2008-09.pdf"/>
+        <exam2009-10 href="exam2009-10.pdf"/>
+        <hhr08 href="hhr08.pdf"/>
+        <hol01 href="hol01.pdf"/>
+        <hol14 href="hol14.pdf"/>
+        <hww06 href="hww06.pdf"/>
+        <koo04 href="koo04.pdf"/>
+        <kcr10 href="kcr10.pdf"/>
+        <lab05 href="lab05.pdf"/>
+        <lab06 href="lab06.pdf"/>
+        <lab07 href="lab07.pdf"/>
+        <lab08 href="lab08.pdf"/>
+        <lab09 href="lab09.pdf"/>
+        <lab10 href="lab10.pdf"/>
+        <lab10model href="box-sorter.xml"/>
+        <lab11 href="lab11.pdf"/>
+        <lab11model href="ttp.xml"/>
+        <lab12 href="lab12.pdf"/>
+        <lab12model href="bridge.xml"/>
+        <lec01 href="lec01.pdf"/>
+        <lec02 href="lec02.pdf"/>
+        <lec03 href="lec03.pdf"/>
+        <lec04 href="lec04.pdf"/>
+        <lec05 href="lec05.pdf"/>
+        <lec05a href="lec05a.pdf"/>
+        <lec05S href="lec05S.pdf"/>
+        <lec06 href="lec06.pdf"/>
+        <lec07 href="lec07.pdf"/>
+        <lec08 href="lec08.pdf"/>
+        <lec09 href="lec09.pdf"/>
+        <lec10 href="lec10.pdf"/>
+        <lec11 href="lec11.pdf"/>
+        <lec12 href="lec12.pdf"/>
+        <lev95 href="lev95.pdf"/>
+        <med href="med.pdf"/>
+        <ms02 href="ms02.pdf"/>
+        <mutex1 href="mutex1.pdf"/>
+        <rsg00 href="rsg00.pdf"/>
+        <rus95 href="rus95.pdf"/>
+        <sac03 href="sac03.pdf"/>
+        <sampleexam href="sample_exam.pdf"/>
+        <solutions_01-02 href="solutions_01-02.zip"/>
+        <solutions_03-04 href="solutions_03-04.zip"/>
+        <spinbasic href="Manual.html"/>
+        <spinconcise href="Quick.html"/>
+        <spinintro href="spinintro.pdf"/>
+        <spinstart href="GettingStarted.html"/>
+        <uppaal href="uppaal.zip"/>
+        <uppaalTutorial href="uppaal-tutorial2004.pdf"/>
+        <visualstate href="vs.exe"/>
+      </CM604>
+    </ra>
+  </external-refs>
+
+</site>

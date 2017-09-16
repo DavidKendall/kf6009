@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V2.0//EN" "http://forrest.apache.org/dtd/document-v20.dtd">
+<document> 
+  <header> 
+    <title>CM604 -- Assessable Reading List</title> 
+  </header> 
+  <body> 
+<section id="reading">
+<title>CM604 -- Assessable Reading List</title>
+
+<p>
+  The readings in this list are required, in the sense that you may be required to show familiarity with them in
+  your assignment report.
+</p>
+
+<p>
+Please feel free to engage your tutors in conversation about any of the 
+issues raised in these readings.
+</p>
+
+<ul>
+
+<!--
+<li id="">[] <a href="ext:ra/"> </a>
+<p>
+</p>
+</li>
+-->
+
+<li id="dac99">[DAC99] <a href="ext:ra/CM604/dac99">Patterns for Property 
+Specification in Finite State Verification</a>
+<p>
+Correctly capturing a requirement in temporal logic is often trickier
+than you'd think. One useful approach to the problem is to base your
+specifications on typical 'patterns' of expression. This paper was one of
+the first to develop extensively such an approach.
+ </p>
+</li>
+
+<li id="hol01">[HOL01] <a href="ext:ra/CM604/hol01">Economics of Software Verification</a>
+<p>
+ Gerard Holzmann is the inventor of the SPIN model checker and has
+ worked for more than 20 years in the field of hardware and software
+ verification. His recent paper on the economics of software
+ verification gives a valuable insight into the reasons why formal
+ approaches to system specification and design are increasingly
+ recognised as worthwhile. Read this paper and make brief notes on the
+ economic justification for the application of software verification
+ techniques.
+</p>
+</li>
+
+<li id="hol14">[HOL14] <a href="ext:ra/CM604/hol14">Mars Code</a>
+  <p>
+    This paper describes the techniques used by the JPL team responsible for the software
+    on the Mars Curiosity rover that landed on Mars in 2012. You should pay particular attention
+    to the use of model-checking in the drive to increase confidence in the quality of the software.
+  </p>
+</li>
+
+<li id="lev95">[LEV95] <a href="ext:ra/CM604/lev95">Medical Devices: Therac 25</a>
+<p>
+ THERAC 25 was a computer-controlled radiation therapy machine that
+ massively overdosed six people between June 1985 and January
+ 1987. The attached paper appears as an appendix in the book Safeware:
+ System Safety and Computers by Nancy Leveson, Addison Wesley,
+ 1995. The paper offers many lessons to the developers of embedded
+ systems. Read the paper and make brief notes on the main principles
+ of embedded systems specification and design that are highlighted by
+ the shortcomings in the design and analysis of the THERAC 25
+ system. <strong>Note 1</strong> A simpler statement of the basic
+ facts appears <a href="ext:therac25">here</a>. A quicker, but
+ probably less rewarding, approach would be to read this in
+ conjunction with section 4 on Causal Factors in the main
+ paper. <strong>Note 2</strong> This case study will be used also in
+ the module CM601 Applied Professionalism and Management.
+</p>
+</li>
+
+<li id="rus95">[RUS95] <a href="ext:ra/CM604/rus95">Formal Methods and their Role in the Certification of Critical Systems</a>
+
+<p>
+ Rushby, J., Technical Report CSL-95-1, Computer Science Laboratory,
+ SRI International, 1995
+
+Very little technical detail (and what there is can be skimmed) but a
+good review of what we mean by 'formal methods' and how they can be
+incorporated into projects in the 'real world'. 
+</p>
+</li>
+
+<li id="sac03">[SAC03] <a href="ext:ra/CM604/sac03">From Natural Language
+Requirements to Rigorous Property Specifications</a>
+<p>
+This paper attempts to make the work on specification patterns even more
+accessible to the practising system engineer.
+</p>
+</li>
+
+<li id="sta95">[STA95] <a href="ext:sta95">Standish Report - CHAOS - 1995</a>
+<p>
+A survey of software successes and failures and an analysis of the causes
+of each. Published by the Standish Group and reproduced on the SPIN web site.
+</p>
+</li>
+</ul>
+</section>
+</body>
+</document>

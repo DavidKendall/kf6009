@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V2.0//EN" "http://forrest.apache.org/dtd/document-v20.dtd">
+<document> 
+  <header> 
+    <title>Exercises 4</title> 
+  </header> 
+  <body> 
+<section id="ex04">
+<title>Exercises 4</title>
+
+<p>
+<strong>Objectives</strong>
+</p>
+<ul>
+<li>Make further progress with SPIN and PROMELA in modelling and analysing
+some simple concurrent systems</li>
+<li>Specify properties using temporal logic</li>
+</ul> 
+
+<p>
+<strong>Alternating Bit Protocol</strong>
+</p>
+
+<p>
+The figure below shows the architecture of the Alternating Bit Protocol.
+</p>
+
+<figure src="abp.png" alt="ABP figure" width="720" align="center"/>
+
+<p>
+The producer wishes to send data to the consumer, reliably, through a
+medium which might be lossy or error-prone. The alternating bit
+protocol accomplishes this as follows:
+</p>
+
+<p>
+Each data message sent by the sender contains a protocol bit, 0 or 1.
+When the sender sends a message, it sends it repeatedly (with its
+protocol bit) until receiving an acknowledgment (ACK) from the
+receiver that contains the same protocol bit as the message being
+sent.  When the receiver receives a message(with error-free checksum,
+etc), it sends an ACK to the sender and includes the protocol bit of
+the message received. The first time the message is received, the
+protocol delivers the message to the consumer. Subsequent messages
+with the same bit are simply acknowledged.  When the sender receives
+an acknowledgment containing the same bit as the message it is
+currently transmitting, it stops transmitting that message, flips the
+protocol bit, and repeats the protocol for the next message.
+</p>
+
+<p>
+Does this protocol work? The following PROMELA code is a first cut at
+modelling the protocol as four processes: a sender, a receiver, a
+message send medium, an acknowledgement medium. How will you check
+that it works?
+</p>
+
+<p>
+It models error-free media. How will you introduce errors into the
+transmission media and check that it still works?
+</p>
+
+<p>
+Specify some properties that you think the model should exhibit. Write
+the properties in English and in LTL. Use the SPIN verifier to check
+the LTL formulas.
+</p>
+
+<source>
+<code>
+/* Basic version of ABP. No errors in the transmission media. */
+
+#define INIT_BIT 0         /* Start with a zero-tagged message */
+chan stran = [0] of {bit}; /* Sender -> Transmit Medium */
+chan rtran = [0] of {bit}; /* Transmit Medium -> Receiver */
+chan rack = [0] of {bit};  /* Receiver -> Ack medium */
+chan sack = [0] of {bit};  /* Ack medium -> Sender */
+
+bit input = 0;
+bit deliver = 0;
+
+/* Model the sending process */
+proctype Send () {
+  bit stag = INIT_BIT; /* Tag on message to send */
+  bit atag;            /* Tag on acknowledgment */
+do
+:: input = 0;
+   do
+   :: break             /* got new input to send  */
+   :: true -> skip      /* just waiting for input */
+   od;
+   input = 1;
+   do 
+   :: stran!stag;
+     if
+     :: sack?atag ->
+        if 
+        :: (atag == stag) -> break
+        :: else -> skip
+        fi
+     :: timeout -> skip
+     fi 
+   od;
+   stag = 1-stag
+od
+}
+/* Model the transmission medium for messages
+from sender to receiver */
+proctype Trans () {
+bit m;
+do
+:: stran?m;
+   rtran!m
+od 
+}
+/* Model the transmission medium for acknowledgments
+from receiver to sender */ 
+proctype Ack () {
+bit a;
+do
+:: rack?a;
+   sack!a
+od
+}
+/* Model the receiving process */
+proctype Receive () {
+bit etag = INIT_BIT; /* Expected tag on received message */
+bit rtag;            /* Actual tag on received message */
+do
+:: deliver = 0;
+   do
+   :: rtran?rtag;
+      if 
+      :: (rtag == etag) -> break
+      :: else -> rack!rtag
+      fi
+   od;
+   deliver = 1;  /* deliver message */
+   rack!rtag;
+   etag = 1-etag
+od
+}
+
+init {
+  atomic {
+    run Send(); run Trans(); run Ack(); run Receive()
+  }
+}
+</code>
+</source>
+
+</section>
+</body>
+</document>
