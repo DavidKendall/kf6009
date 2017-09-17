@@ -6,7 +6,7 @@ title: Home
 
 
 <p class="lead">
-This module is designed to serve as an introduction to formal and object-oriented methods for specifying, designing and reasoning about embedded systems. The module uses state-of-the-art tools and techniques, including SPIN, UPPAAL and PRISM. It emphasises the importance of constructing and analysing models in the early stages of system development.
+This module is designed to serve as an introduction to rigorous methods for specifying, designing and reasoning about embedded systems. The module uses state-of-the-art tools and techniques, including SPIN, UPPAAL and PRISM. It emphasises the importance of constructing and analysing models in the early stages of system development.
 </p>
 
 
@@ -42,20 +42,20 @@ of modelling, specification and analysis in the design of embedded systems.
 
 On completion of this module, students will be able to:
 
-1. Evaluate the advantages and disadvantages of the application of formal and object-oriented methods in the development of embedded systems, and justify their use where appropriate; having regard to professional, technical and security issues.
-2. Construct and evaluate formal and object-oriented models of a variety of small embedded systems.
+1. Evaluate the advantages and disadvantages of the application of rigorous methods in the development of embedded systems, and justify their use where appropriate; having regard to professional, technical and security issues.
+2. Construct and evaluate rigorous models of a variety of small embedded systems.
 3. Compose formal specifications of system properties and analyse system models with respect to them.
-4. Identify, apply and evaluate appropriate software tools to support the construction and analysis of formal and object-oriented system models and properties.
+4. Identify, apply and evaluate appropriate software tools to support the construction and analysis of rigorous system models and properties.
 
 # Teaching Plan
 
-The following is a *provisional* guide to the organisation of this part of the
+The following is a *provisional* guide to the organisation of the
 module for this year. These arrangements are subject to change during the
 course of the module.
 
 
-| Week   | W/c   | Lecture A   | Practical   |
-| :----: | :---: | :---------: | :---------: |
+| Week   | W/c   | Lecture    | Practical   |
+| :----: | :---: | :--------: | :---------: |
 **1** | 18-Sep &nbsp; | [Module overview and introduction]({{site.raurl}}/A01.pdf) <br/> *Reading:* [HOL14]({{site.raurl}}/reading/hol14.pdf) | [SPIN and PROMELA]({{site.raurl}}/spinintro.pdf) [[Exercises]({{site.raurl}}/L01.pdf)]
 **2** | 25-Sep &nbsp; | [Modelling and specificaton with Finite State Automata I]({{site.raurl}}/A02.pdf) | [More PROMELA]({{site.raurl}}/spinintro.pdf) [[Exercises]({{site.raurl}}/L02.pdf)]
 **3** | 02-Oct &nbsp; | [Modelling and specification with Finite State Automata II]({{site.raurl}}/A03.pdf) <br/> [[Mutex model]({{site.raurl}}/resources/mutex1.pdf)] &nbsp; | [Checking liveness properties with SPIN]({{site.raurl}}/L03.pdf) <br/> [[Outline solutions 1,2]({{site.raurl}}/resources/solutions_01-02.zip)]
@@ -84,7 +84,7 @@ Summative assessment comprises:
 
 * a substantial exercise in specification, design and analysis in which students will be required to demonstrate both a practical ability to apply appropriate languages, techniques and tools, and also an understanding of the theoretical principles underlying their practice.
 
-The assessment specification will be made available to students in week 6 and will be discussed in the lab session that week. The work is due to be submitted via the elP (Blackboard) by 23.59 on Thursday of week 13. Feedback and provisional marks will be provided to students by email within 20 working days of submission.
+The assessment specification will be made available to students in week 6 and will be discussed in the lab session that week. The work is due to be submitted via the elP (Blackboard) by 23.59 on Thursday of week 12. Feedback and provisional marks will be provided to students by email within 20 working days of submission.
 
 <a class="btn btn-large btn-primary" href="{{site.raurl}}/assgn.pdf"><i class="icon-upload-alt"></i>Download Assignment Specification</a>
 
@@ -119,15 +119,6 @@ Techniques and Tools, Springer Verlag, 2010</li>
 Cooling, J.E. Software Engineering for Real-Time
 Systems. Addison-Wesley, 2003.</li>
 <li>
-Douglass, B.P. Real-Time UML. Addison-Wesley, 1999.</li>
-<li>
-Douglass, B.P. Doing Hard Time. Addison-Wesley, 1999.</li>
-<li>
-Gomaa, H. Designing Concurrent Distributed and Real Time Applications
-with UML. Addison-Wesley, 2000.</li>
-<li>Harel, D.
-<a href="http://www.wisdom.weizmann.ac.il/~dharel/SCANNED.PAPERS/VisualFormalisms.pdf"><em>On Visual Formalisms</em></a> and <a href="http://www.wisdom.weizmann.ac.il/~dharel/SCANNED.PAPERS/BitingTheSilverBullet.pdf"><em>Biting the Silver Bullet: Toward a Brighter Future for System Development</em></a></li>
-<li>
 Holzmann, G., The SPIN Model Checker: Primer and Reference Manual,
 Addison Wesley, 2003, ISBN 0321228626</li>
 <li>Holzmann, G., <a href="{{site.raurl}}/reading/hol14.pdf">Mars Code</a>, Communications of the ACM, 57(2), Feb 2014
@@ -139,6 +130,8 @@ Addison Wesley, 2003, ISBN 0321228626</li>
 </li>
 <li>Lee, E. and Seshia, S., <a href="http://LeeSeshia.org">Introduction to Embedded Systems, A Cyber-Physical Systems Approach</a>, Second Edition, LeeSeshia.org, ISBN 978-1-312-42740-2, 2015. <br/>
   A free text book by Edward A. Lee and Sanjit A. Seshia that provides a modern introduction to embedded systems.
+</li>
+<li>Parker, D., <a href="http://www.prismmodelchecker.org/tutorial/">PRISM Tutorial</a>
 </li>
 <li>Vaandrager, F., <a href="http://www.cs.ru.nl/~fvaan/PV/what_is_a_good_model.html">What is a good model</a>, Unpublished note, 2010
 </li>

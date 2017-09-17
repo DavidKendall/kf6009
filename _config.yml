@@ -8,11 +8,11 @@ title: CM0604
 subtitle: Embedded systems specification and design
 authors: Michael Brockway, David Kendall
 copyyear: 2015-2017
-#url: http://hesabu.net/cm0604
-#raurl: http://hesabu.net/cm0604/assets/ra
+url: http://hesabu.net/cm0604
+raurl: http://hesabu.net/cm0604/assets/ra
 rraurl: http://cgweb1.northumbria.ac.uk/SubjectAreaResources/CM0605/assets/ra
-url: http://localhost:4000
-raurl: http://localhost:4000/assets/ra
+#url: http://localhost:4000
+#raurl: http://localhost:4000/assets/ra
 
 lab_links:
   - title: Lab 01
@@ -46,10 +46,10 @@ lab_links:
     url: assets/ra/L10.pdf
     #rep: cm0605_lab01
   - title: Lab 11
-    url: assets/ra/L011.pdf
+    url: assets/ra/L11.pdf
     #rep: cm0605_lab01
   - title: Lab 12
-    url: assets/ra/L012.pdf
+    url: assets/ra/L12.pdf
     #rep: cm0605_lab01
  
 
