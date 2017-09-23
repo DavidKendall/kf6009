@@ -8,9 +8,9 @@ title: CM0604
 subtitle: Embedded systems specification and design
 authors: Michael Brockway, David Kendall
 copyyear: 2015-2017
-url: http://hesabu.net/cm0604
-raurl: http://hesabu.net/cm0604/assets/ra
-rraurl: http://cgweb1.northumbria.ac.uk/SubjectAreaResources/CM0605/assets/ra
+#url: http://hesabu.net/cm0604
+raurl: assets/ra
+rraurl: assets/ra
 #url: http://localhost:4000
 #raurl: http://localhost:4000/assets/ra
 

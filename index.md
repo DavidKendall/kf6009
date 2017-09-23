@@ -29,9 +29,10 @@ The principles and techniques taught in this module are used extensively in the 
 |---|:---|
 **Lecture** &nbsp;| Mon 09.00-11.00 ELA 218
 **Lab/Seminar**       | Tue 11.00-13.00 PB F1
+**Lab/Seminar**       | Fri 13.00-15.00 PB F1
 
 <p class="text-info">
-You should attend <em>both</em> lecture sessions and the
+You should attend <em>both</em> lecture sessions and <em>one</em>
 lab/seminar session every week.
 </p>
 
