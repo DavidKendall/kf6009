@@ -1,31 +1,34 @@
-markdown: redcarpet
+markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-highlighter: pygments
-redcarpet:
-  extensions: [ "no_intra_emphasis", "fenced_code_blocks", disable_indented_code_blocks, "autolink", "tables", "with_toc_data" ]
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
 
-title: CM0604
-subtitle: Embedded systems specification and design
-authors: Michael Brockway, David Kendall
-copyyear: 2015-2017
-#url: http://hesabu.net/cm0604
-raurl: assets/ra
-rraurl: assets/ra
+title: KF6009
+subtitle: Model-based design and verification
+authors: David Kendall, Alun Moon
+copyyear: 2015-2018
+url: http://hesabu.net
+baseurl: /kf6009
+raurl: /assets/ra
+rraurl: /assets/ra
 #url: http://localhost:4000
 #raurl: http://localhost:4000/assets/ra
 
 lab_links:
   - title: Lab 01
-    url: assets/ra/L01.pdf
+    url: L01.html
     #rep: cm0605_lab01
   - title: Lab 02
-    url: assets/ra/L02.pdf
+    url: L02.html
     #rep: cm0605_lab01
   - title: Lab 03
-    url: assets/ra/L03.pdf
+    url: L03.html
     #rep: cm0605_lab03
   - title: Lab 04
-    url: assets/ra/L04.pdf
+    url: L04.html
     #rep: cm0605_lab01
   - title: Lab 05
     url: assets/ra/L05.pdf
@@ -55,7 +58,7 @@ lab_links:
 
 right_links:
   - title: View on GitHub
-    url: https://github.com/davidkendall/cm0604_www
+    url: https://github.com/davidkendall/cm0604
 
 repo: https://github.com/davidkendall/cm0604
 

@@ -2,53 +2,82 @@
 layout: default
 title: Home
 ---
-# Introduction
+
+## Introduction
 
 
 <p class="lead">
-This module is designed to serve as an introduction to rigorous methods for specifying, designing and reasoning about embedded systems. The module uses state-of-the-art tools and techniques, including SPIN, UPPAAL and PRISM. It emphasises the importance of constructing and analysing models in the early stages of system development.
+This module is about the theory and practice of modelling,
+specification and analysis for the development of computer software. You will
+be introduced to a variety of formal methods, such as state transition systems,
+timed and probabilistic automata, and temporal logic. You will be encouraged to
+construct, analyse and refine your own system models. In addition, you will
+gain experience with state-of- the-art software engineering tools for design
+and analysis.
 </p>
 
 
 <img src="assets/images/cm0604_image.png" alt="Embedded systems tools" class="img-responsive center-block"/>
-The main ideas are communicated in a series of 12 lectures. The laboratory sessions are used to put these ideas into practice in a variety of modelling and analysis exercises. By the end of the module, you should be able to take an informal specification of an embedded system, construct a formal model of (part of) a design and reason about the likely behaviour of the system. The understanding gained in this process can be invaluable in the implementation of a reliable system.
+Lectures are the main vehicle by which you will be introduced to fundamental
+concepts and principles and for providing context and motivation. You will be
+expected to prepare for lecture topics and deepen your understanding of course
+material by studying course texts and technical literature. Seminars and
+practical sessions support the lecture programme by providing you with
+opportunities to identify defend and apply appropriate methods and tools for
+specification and design. Software tools are available outside formal contact
+time to enable you to explore aspects of the subject independently.
 
-The principles and techniques taught in this module are used extensively in the module EN0617 Industrial Case Project.
+In particular the module will cover topics such as:
 
-# Module Team
++ *Modelling* - variety of formal methods, e.g. state transition systems,
+timed and probabilistic automata; use of abstraction; modelling of functional,
+temporal and security aspects of system behaviour.
++ *Specification* – propositional, predicate and temporal logic; safety and
+  liveness properties: deadlock freedom, fairness, bounded response, security.
++ *Analysis* - principles of model-checking, simulation, and static analysis
+for reasoning about system behaviour.
++ *Tools* - use of tools, e.g. TLA+, Uppaal, Spin, PRISM, and evaluation of their
+  outputs.
+  
+## Module Team
 
 |   |    |
 |---|:---|
-|Module Tutor      | [David Kendall](http://computing.northumbria.ac.uk/staff/cgdk2)
-|Lecturer &nbsp;  | [Michael Brockway](http://computing.northumbria.ac.uk/staff/cgmb3)|
+|Module Tutor      | [David Kendall](http://www.hesabu.net/davidkendall/)
+|Lecturer &nbsp;  | [Alun Moon](http://computing.northumbria.ac.uk/staff/cgam1)|
 
 
-# Teaching Arrangements
+## Teaching Arrangements
 
 |   |    |
 |---|:---|
-**Lecture** &nbsp;| Mon 09.00-11.00 ELA 218
-**Lab/Seminar**       | Tue 11.00-13.00 PB F1
-**Lab/Seminar**       | Fri 13.00-15.00 PB F1
+**Lecture** &nbsp;| Tue 11.00-13.00 ELA 109
+**Lab/Seminar**   | Fri 16.00-18.00 CIS 202
 
 <p class="text-info">
-You should attend <em>both</em> lecture sessions and <em>one</em>
-lab/seminar session every week.
+You should attend the lecture session a lab/seminar session every week.
 </p>
 
-# Synopsis
-
+## Synopsis
 The aim of the module is to provide an understanding of the theory and practice
-of modelling, specification and analysis in the design of embedded systems.
+of modelling, specification and analysis in the design of computer software.
 
-On completion of this module, students will be able to:
+On completion of this module, students are expected to be able to:
 
-1. Evaluate the advantages and disadvantages of the application of rigorous methods in the development of embedded systems, and justify their use where appropriate; having regard to professional, technical and security issues.
-2. Construct and evaluate rigorous models of a variety of small embedded systems.
-3. Compose formal specifications of system properties and analyse system models with respect to them.
-4. Identify, apply and evaluate appropriate software tools to support the construction and analysis of rigorous system models and properties.
+1. Discuss the theoretical principles of various formal methods for the
+   specification and design of computer software, and the algorithms and data
+   structures used in their supporting tools.
+1. Construct and evaluate formal models of a variety of computer systems.
+1. Compose formal specifications of system properties and analyse system models
+   with respect to them.
+1. Identify, apply and evaluate appropriate software tools to support the
+   construction and analysis of formal system models and properties.
+1. Evaluate the advantages and disadvantages of the application of various
+   formal methods in the development of computer software, and justify their
+   use where appropriate, having regard to professional, ethical, technical and
+   security issues.
 
-# Teaching Plan
+## Teaching Plan
 
 The following is a *provisional* guide to the organisation of the
 module for this year. These arrangements are subject to change during the
@@ -57,18 +86,18 @@ course of the module.
 
 | Week   | W/c   | Lecture    | Practical   |
 | :----: | :---: | :--------: | :---------: |
-**1** | 18-Sep &nbsp; | [Module overview and introduction]({{site.raurl}}/A01.pdf) <br/> *Reading:* [HOL14]({{site.raurl}}/reading/hol14.pdf) | [SPIN and PROMELA]({{site.raurl}}/spinintro.pdf) [[Exercises]({{site.raurl}}/L01.pdf)]
-**2** | 25-Sep &nbsp; | [Modelling and specificaton with Finite State Automata I]({{site.raurl}}/A02.pdf) | [More PROMELA]({{site.raurl}}/spinintro.pdf) [[Exercises]({{site.raurl}}/L02.pdf)]
-**3** | 02-Oct &nbsp; | [Modelling and specification with Finite State Automata II]({{site.raurl}}/A03.pdf) <br/> [[Mutex model]({{site.raurl}}/resources/mutex1.pdf)] &nbsp; | [Checking liveness properties with SPIN]({{site.raurl}}/L03.pdf) <br/> [[Outline solutions 1,2]({{site.raurl}}/resources/solutions_01-02.zip)]
-**4** | 09-Oct &nbsp; | [Temporal logic. Specification patterns.]({{site.raurl}}/A04.pdf) <br/> *Reading:* [[DAC99]({{site.raurl}}/reading/dac99.pdf)] [[SAC03]({{site.raurl}}/reading/sac03.pdf)] &nbsp; | [Temporal logic specification and analysis]({{site.raurl}}/L04.pdf) <br/> [[Outline solutions 3,4]({{site.raurl}}/resources/solutions_03-04.zip)]
-**5** | 16-Oct &nbsp; | [Modelling and analysis of security protocols.]({{site.raurl}}/A05.pdf) [Timed automata and timed transition systems]({{site.raurl}}/A05a.pdf) <br/> [[Uppaal tutorial]({{site.raurl}}/reading/uppaal-tutorial2004.pdf)] [[LEV95]({{site.raurl}}/reading/lev95.pdf)]&nbsp; | [Introduction to Uppaal]({{site.raurl}}/L05.pdf)
-**6** | 23-Oct &nbsp; | [Networks of timed automata. Specifying real-time properties.]({{site.raurl}}/A06.pdf) <br/> *Reading:* [[HOL01]({{site.raurl}}/reading/hol01.pdf)]&nbsp; | [Modelling a box sorter]({{site.raurl}}/L06.pdf) [[Model]({{site.raurl}}/resources/box-sorter.xml)]
-**7** | 30-Oct &nbsp; | [Uppaal language extensions and case study]({{site.raurl}}/A07.pdf) [[Case study resources]({{site.raurl}}/resources/case_study.zip)] &nbsp; | [Modelling and verifying a real-time communication protocol]({{site.raurl}}/L07.pdf) [[Model]({{site.raurl}}/resources/ttp.xml)]
-**8** | 06-Nov &nbsp; | [Principles of automata-theoretic verification of real-time systems]({{site.raurl}}/A08.pdf) &nbsp; | [Synthesising a schedule]({{site.raurl}}/L08.pdf) [[Model]({{site.raurl}}/resources/ttp.xml)]
-**9** | 13-Nov &nbsp; | [Introduction to probabilistic modelling. PRISM]({{site.raurl}}/A09.pdf) &nbsp; | [Probabilistic Models Lab 1]({{site.raurl}}/L09.pdf)
-**10** | 20-Nov &nbsp; | [More on PRISM]({{site.raurl}}/A10.pdf) &nbsp; | [Probabilistic Models Lab 2]({{site.raurl}}/L10.pdf)
-**11** | 27-Nov &nbsp; | [Probabilistic automata]({{site.raurl}}/A11.pdf) &nbsp; |[Probabilistic Models Lab 3]({{site.raurl}}/L10.pdf)
-**12** | 04_Dec &nbsp; | [Probabilistic temporal logic]({{site.raurl}}/A12.pdf) &nbsp; | [Probabilistic Models Lab 4]({{site.raurl}}/L12.pdf)
+**1** | 01 Oct &nbsp; | [Module Introduction and Overview <br/> A first TLA+ specification]({{site.baseurl}}{{site.raurl}}/A01.pdf)  <br/> *Reading:* [NRZ+14]({{site.baseurl}}{{site.raurl}}/reading/nrz+14.pdf), [HOL14]({{site.baseurl}}{{site.raurl}}/reading/hol14.pdf) <br/> *Video:* [VID01](http://lamport.azurewebsites.net/video/intro.html), [VID02](http://lamport.azurewebsites.net/video/smintla.html) | [First steps with the TLA+ Toolbox](L01.html) 
+**2** | 08-Oct &nbsp; | [TLA+ : Functions, Tuples, Records, Strings <br/> Stuttering; Temporal Logic]({{site.baseurl}}{{site.raurl}}/A02.pdf) <br/> *Reading:* [[LEV95]({{site.baseurl}}{{site.raurl}}/reading/lev95.pdf)]| [More TLA+](L02.html)
+**3** | 15-Oct &nbsp; | [Pluscal, Mutual Exclusion, Safety]({{site.baseurl}}{{site.raurl}}/A03.pdf) &nbsp; | [Modelling mutex protocols in Pluscal, Checking safety properties.](L03.html)
+**4** | 22-Oct &nbsp; | [More Temporal logic, Liveness, Fairness <br/> Specification patterns]({{site.baseurl}}{{site.raurl}}/A04.pdf) <br/> *Reading:* [[DAC99]({{site.baseurl}}{{site.raurl}}/reading/dac99.pdf)] [[SAC03]({{site.baseurl}}{{site.raurl}}/reading/sac03.pdf)] &nbsp; | [Temporal logic specification and analysis, Checking liveness properties of mutex](L04.html)
+**5** | 29-Oct &nbsp; | [Modelling communication via message channels <br/> Inside a model-checker]({{site.baseurl}}{{site.raurl}}/A05.pdf) | [Alternating bit protocol](L05.html)
+**6** | 05-Nov &nbsp; | [Modelling and analysis of security protocols.]({{site.baseurl}}{{site.raurl}}/A06.pdf)  &nbsp; | [Modelling and analysis of security protocols](L06.html)
+**7** | 12-Nov &nbsp; | TLA+ case study: distributed termination | Introduction to the assignment
+**8** | 19-Nov &nbsp; | [Modelling real-time systems: timed automata and timed transition systems]({{site.baseurl}}{{site.raurl}}/A08.pdf) <br/> [[Uppaal tutorial]({{site.baseurl}}{{site.raurl}}/reading/uppaal-tutorial2004.pdf)] | [Introduction to Uppaal]({{site.baseurl}}{{site.raurl}}/L08.pdf)
+**9** | 26-Nov &nbsp; | [Networks of timed automata. Specifying real-time properties.]({{site.baseurl}}{{site.raurl}}/A09.pdf) <br/> *Reading:* [[HOL01]({{site.baseurl}}{{site.raurl}}/reading/hol01.pdf)]&nbsp; | [Modelling a box sorter]({{site.baseurl}}{{site.raurl}}/L09.pdf) [[Model]({{site.baseurl}}{{site.raurl}}/resources/box-sorter.xml)]
+**10** | 03-Dec &nbsp; | [Uppaal language extensions and case study]({{site.baseurl}}{{site.raurl}}/A10.pdf) [[Case study resources]({{site.baseurl}}{{site.raurl}}/resources/case_study.zip)] &nbsp; | [Modelling and verifying a real-time communication protocol]({{site.baseurl}}{{site.raurl}}/L10.pdf) [[Model]({{site.baseurl}}{{site.raurl}}/resources/ttp.xml)]
+**11** | 10-Dec &nbsp; | [Principles of automata-theoretic verification of real-time systems]({{site.baseurl}}{{site.raurl}}/A11.pdf) &nbsp; | [Synthesising a schedule]({{site.baseurl}}{{site.raurl}}/L11.pdf) [[Model]({{site.baseurl}}{{site.raurl}}/resources/bridge.xml)]; Assignment support
+**12** | 17-Dec &nbsp; | [Introduction to probabilistic modelling]({{site.baseurl}}{{site.raurl}}/A12.pdf) &nbsp; | [Using PRISM]({{site.baseurl}}{{site.raurl}}/L12.pdf); Assignment support
 
 <br/>
 
@@ -79,21 +108,22 @@ student workload is 200 hours. Over the course of a 15-week semester, you
 should be spending about 13 hours per week on this module.
 </p>
 
-# Assessment
+## Assessment
 
 Summative assessment comprises:
 
-* a substantial exercise in specification, design and analysis in which students will be required to demonstrate both a practical ability to apply appropriate languages, techniques and tools, and also an understanding of the theoretical principles underlying their practice.
+* a substantial exercise in specification, design and analysis in which students will be required to demonstrate both a practical ability to apply appropriate languages, techniques and tools, and also an understanding of the theoretical principles underlying their practice. This is a single assessment, contributing 100% of the
+module mark.
 
 The assessment specification will be made available to students in week 6 and will be discussed in the lab session that week. The work is due to be submitted via the elP (Blackboard) by 23.59 on Thursday of week 12. Feedback and provisional marks will be provided to students by email within 20 working days of submission.
 
-<a class="btn btn-large btn-primary" href="{{site.raurl}}/assgn.pdf"><i class="icon-upload-alt"></i>Download Assignment Specification</a>
+<a class="btn btn-large btn-primary" href="{{site.baseurl}}{{site.raurl}}/assgn.pdf"><i class="icon-upload-alt"></i>Download Assignment Specification</a>
 
 Assessment is subject to the Academic Regulations for Taught Awards. You should ensure that you are familiar with the latest regulations, particularly with regard to academic misconduct and late submission of work.
 
 You can view the latest module evaluation document
 
-# Recommended Reading
+## Recommended Reading
 <p>
 There is no essential text for this module. Below is a list of references to
 texts and other resources that are relevant to the content of the module.
@@ -122,12 +152,16 @@ Systems. Addison-Wesley, 2003.</li>
 <li>
 Holzmann, G., The SPIN Model Checker: Primer and Reference Manual,
 Addison Wesley, 2003, ISBN 0321228626</li>
-<li>Holzmann, G., <a href="{{site.raurl}}/reading/hol14.pdf">Mars Code</a>, Communications of the ACM, 57(2), Feb 2014
+<li>Holzmann, G., <a href="{{site.baseurl}}{{site.raurl}}/reading/hol14.pdf">Mars Code</a>, Communications of the ACM, 57(2), Feb 2014
 </li>
 <li>Huckle, T.
 <a href="ext:bugse">Collection of Software Bugs</a>, 2004</li>
 <li>Huth, M., Ryan, M., <em>Logic in Computer Science: Modelling and
   Reasoning about Systems</em> 2nd edition, Cambridge University Press, 2004.
+</li>
+<li>Lamport, L., <a href="{{site.baseurl}}{{site.raurl}}/SpecifyingSystemsTLA+.pdf">Specifying Systems: The TLA+ Language and Tools for Hardware and Software Engineers</a>, Addison Wesley Professional, 2002</li>
+<li>Lamport, L., <a href="{{site.baseurl}}{{site.raurl}}/start.pdf">The TLA+ Hyperbook</a>, 2018</li>
+<li>Lamport, L., <a href="https://lamport.azurewebsites.net/tla/p-manual.pdf">A PlusCal User's Manual, P-Syntax, Version 1.8</a>, 2017 (<a href="{{site.baseurl}}{{site.raurl}}/p-manual.pdf">Local copy</a>)
 </li>
 <li>Lee, E. and Seshia, S., <a href="http://LeeSeshia.org">Introduction to Embedded Systems, A Cyber-Physical Systems Approach</a>, Second Edition, LeeSeshia.org, ISBN 978-1-312-42740-2, 2015. <br/>
   A free text book by Edward A. Lee and Sanjit A. Seshia that provides a modern introduction to embedded systems.
@@ -142,29 +176,78 @@ Verification (CAV), Tools and Algorithms for the Construction of
 Systems (TACAS)</li>
 </ul>
 
-# Other Resources
+## Other Resources
 
 <p>
-<a href="http://spinroot.com/spin/whatispin.html">
-<img class="image-responsive pull-right" src="assets/images/spinlogo2_medium.gif"
-     alt="SPIN Logo"    width="80" /></a>
+<a href="https://lamport.azurewebsites.net/tla/tla.html">
+<img class="image-responsive pull-right" src="assets/images/tlaplus.png"
+     alt="TLA+ Logo"    width="80" /></a>
 </p>
 <p>
-<strong><a href="http://spinroot.com/spin/whatispin.html">SPIN</a></strong><br/>
-"Spin is a popular open-source software tool, used by thousands of
-people worldwide, that can be used for the formal verification of
-distributed software systems. The tool was developed at Bell Labs in the
-original Unix group of the Computing Sciences Research Center, starting in
+<strong><a href="https://lamport.azurewebsites.net/tla/tla.html">TLA+</a></strong><br/>
+
+"TLA+ (pronounced as tee ell a plus, /ˈtiː ɛl eɪ plʌs/) is a formal
+specification language developed by Leslie Lamport. It is used to design,
+model, document, and verify concurrent systems. TLA+ has been described as
+exhaustively-testable pseudocode and blueprints for software systems; the
+TLA stands for "Temporal Logic of Actions."
+
+For design and documentation, TLA+ fulfills the same purpose as informal
+technical specifications. However, TLA+ specifications are written in a formal
+language of logic and mathematics, and the precision of specifications written
+in this language is intended to uncover design flaws before system
+implementation is underway.
+
+Since TLA+ specifications are written in a formal language, they are amenable
+to finite model checking. The model checker finds all possible system
+behaviours up to some number of execution steps, and examines them for
+violations of desired invariance properties such as safety and liveness. TLA+
+specifications use basic set theory to define safety (bad things won't happen)
+and temporal logic to define liveness (good things eventually happen).
+
+TLA+ is also used to write machine-checked proofs of correctness both for
+algorithms and mathematical theorems. The proofs are written in a declarative,
+hierarchical style independent of any single theorem prover backend. Both
+formal and informal structured mathematical proofs can be written in TLA+; the
+language is similar to LaTeX, and tools exist to translate TLA+ specifications
+to LaTeX documents.
+
+TLA+ was introduced in 1999, following several decades of research into a
+verification method for concurrent systems. A toolchain has since developed,
+including an IDE and distributed model checker. The pseudocode-like language
+PlusCal was created in 2009; it transpiles to TLA+ and is useful for specifying
+sequential algorithms. TLA+2 was announced in 2014, expanding language support
+for proof constructs. The current TLA+ reference is <a
+href="https://lamport.azurewebsites.net/tla/hyperbook.html">The TLA+
+Hyperbook</a> by Leslie Lamport." (adapted from <a
+href="https://en.wikipedia.org/wiki/TLA%2B">Wikipedia</a>) </p> 
+<ul>
+<li><a href="https://tla.msr-inria.inria.fr/tlatoolbox/doc/contents.html">TLA+ Toolbox User's Guide</a></li>
+<li><a href="https://lamport.azurewebsites.net/tla/summary-standalone.pdf">TLA+ Cheat Sheet</a>
+(<a href="{{site.baseurl}}{{site.raurl}}/summary-standalone.pdf">Local copy</a>)</li>
+</ul>
+
+<p> <a href="http://spinroot.com/spin/whatispin.html">
+<img class="image-responsive pull-right"
+src="assets/images/spinlogo2_medium.gif" alt="SPIN Logo"    width="80" /></a>
+</p> <p> <strong><a
+href="http://spinroot.com/spin/whatispin.html">SPIN</a></strong><br/> "Spin is
+a popular open-source software tool, used by thousands of people worldwide,
+that can be used for the formal verification of distributed software systems.
+The tool was developed at Bell Labs in the original Unix group of the Computing
+Sciences Research Center, starting in
 1980. The software has been available freely since 1991, and continues to
-evolve to keep pace with new developments in the field. In April 2002 the tool
-was awarded the prestigious System Software Award for 2001 by the ACM." [<a
-  href="http://awards.acm.org/award_winners/holzmann_1625680.cfm">Holzmann</a>]
-</p> <p> The main focus of this module, in weeks 1-4, is on the theory and
-practical application of this tool to the modelling and analysis of embedded
-systems. It is essential that you use the tool extensively on a variety of lab
-exercises. The tool is installed in PB Lab F1 on the Linux machines. It is also
-available free for use on your own machines -- see the <a
-  href="http://spinroot.com/spin/Man/README.html">download</a> instructions.  </p>
+      evolve to keep pace with new developments in the field. In April 2002 the
+      tool was awarded the prestigious System Software Award for 2001 by the
+      ACM." [<a
+      href="http://awards.acm.org/award_winners/holzmann_1625680.cfm">Holzmann</a>]
+      </p> <p> The main focus of this module, in weeks 1-4, is on the theory
+      and practical application of this tool to the modelling and analysis of
+      embedded systems. It is essential that you use the tool extensively on a
+      variety of lab exercises. The tool is installed in PB Lab F1 on the Linux
+      machines. It is also available free for use on your own machines -- see
+      the <a href="http://spinroot.com/spin/Man/README.html">download</a>
+      instructions.  </p>
 
 <ul>
 <li><a href="http://spinroot.com/spin/Man/3_SpinGUI.html">Getting Started with SPIN</a></li>
@@ -218,7 +301,7 @@ security protocols, biological systems and many others." The tool is <a
   href="http://www.prismmodelchecker.org/download.php">free to download</a>.
 </p>
 
-# Professionalism, ethics and standards
+## Professionalism, ethics and standards
 
 
 <ul>
@@ -243,7 +326,7 @@ security protocols, biological systems and many others." The tool is <a
 </li>
 
 <li>
-Hennell,M., Woodcock,J. and Woodward,M., <a href="http://www.fuji-setsu.co.jp/files/IEC61508_ldra.pdf">The Safety Integrity Levels Of IEC 61508 And A Revised Proposal</a>, Embedded Systems Show, 2006. (<a href="{{site.raurl}}/reading/hww06.pdf">Local copy</a>)
+Hennell,M., Woodcock,J. and Woodward,M., <a href="http://www.fuji-setsu.co.jp/files/IEC61508_ldra.pdf">The Safety Integrity Levels Of IEC 61508 And A Revised Proposal</a>, Embedded Systems Show, 2006. (<a href="{{site.baseurl}}{{site.raurl}}/reading/hww06.pdf">Local copy</a>)
 </li>
 
 <li>Redmill,F., <a href="http://homepages.cs.ncl.ac.uk/felix.redmill/publications/4B.IEC%2061508%20Intro.pdf">An Introduction To The Safety Standard IEC 61508</a>, Journal of the System Safety Society, Volume 35, No. 1, 1999
@@ -270,14 +353,14 @@ performing category A functions, 2006
 
 </ul>
 
-# Security
+## Security
 
 <ul>
-<li>Anderson, R., <em>Security Engineering: A guide to building dependable distributed systems</em> (2nd edition), John Wiley, 2008 [<a href="{{site.raurl}}/reading/and08.pdf">local copy of Chapter 5: Cryptography</a>]</li>
-<li> Halperin, D., Heydt-Benjamin, T.S., Ransford, B.,  Clark, S.S., Defend, B., Morgan, W., Fu, K., Kohno, T. and Maisel, W.H., <em>Pacemakers and Implantable Cardiac Defibrillators: Software Radio Attacks and Zero-Power Defenses</em>, IEEE Symposium on Security and Privacy, 129-142, May, 2008 [<a href="{{site.raurl}}/reading/hhr08.pdf">pdf</a>]</li>
-<li> Koopman, P., <em>Embedded system security</em>, IEEE Computer, 37(7): 95-97, July 2004 [<a href="{{site.raurl}}/reading/koo04.pdf">pdf</a>]</li>
-<li> Karl Koscher, Alexei Czeskis, Franziska Roesner, Shwetak Patel, and Tadayoshi Kohno, Stephen Checkoway, Damon McCoy, Brian Kantor, Danny Anderson, Hovav Shacham, and Stefan Savage, <em>Experimental Security Analysis of a Modern Automobile</em>, IEEE Symposium on Security and Privacy 2010, 447-462, 2010 [<a href="{{site.raurl}}/reading/kcr10.pdf">pdf</a>]</li>
-<li> Maggi, P. and Sisto, R., <em>Using SPIN to verify security properties of cryptographic protocols</em>, Proceedings of SPIN Workshop 2002, LNCS 2318, 187-204, Springer Verlag, 2002 [<a href="{{site.raurl}}/reading/ms02.pdf">pdf</a>]</li>
-<li> Ryan, P., Schneider, S., Goldsmith, M. and Lowe, G., <em>Modelling and analysis of security protocols: the CSP approach</em>, Addison Wesley, 2000 [<a href="{{site.raurl}}/reading/rsg00.pdf">pdf</a>]</li>
+<li>Anderson, R., <em>Security Engineering: A guide to building dependable distributed systems</em> (2nd edition), John Wiley, 2008 [<a href="{{site.baseurl}}{{site.raurl}}/reading/and08.pdf">local copy of Chapter 5: Cryptography</a>]</li>
+<li> Halperin, D., Heydt-Benjamin, T.S., Ransford, B.,  Clark, S.S., Defend, B., Morgan, W., Fu, K., Kohno, T. and Maisel, W.H., <em>Pacemakers and Implantable Cardiac Defibrillators: Software Radio Attacks and Zero-Power Defenses</em>, IEEE Symposium on Security and Privacy, 129-142, May, 2008 [<a href="{{site.baseurl}}{{site.raurl}}/reading/hhr08.pdf">pdf</a>]</li>
+<li> Koopman, P., <em>Embedded system security</em>, IEEE Computer, 37(7): 95-97, July 2004 [<a href="{{site.baseurl}}{{site.raurl}}/reading/koo04.pdf">pdf</a>]</li>
+<li> Karl Koscher, Alexei Czeskis, Franziska Roesner, Shwetak Patel, and Tadayoshi Kohno, Stephen Checkoway, Damon McCoy, Brian Kantor, Danny Anderson, Hovav Shacham, and Stefan Savage, <em>Experimental Security Analysis of a Modern Automobile</em>, IEEE Symposium on Security and Privacy 2010, 447-462, 2010 [<a href="{{site.baseurl}}{{site.raurl}}/reading/kcr10.pdf">pdf</a>]</li>
+<li> Maggi, P. and Sisto, R., <em>Using SPIN to verify security properties of cryptographic protocols</em>, Proceedings of SPIN Workshop 2002, LNCS 2318, 187-204, Springer Verlag, 2002 [<a href="{{site.baseurl}}{{site.raurl}}/reading/ms02.pdf">pdf</a>]</li>
+<li> Ryan, P., Schneider, S., Goldsmith, M. and Lowe, G., <em>Modelling and analysis of security protocols: the CSP approach</em>, Addison Wesley, 2000 [<a href="{{site.baseurl}}{{site.raurl}}/reading/rsg00.pdf">pdf</a>]</li>
 </ul>
 
