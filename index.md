@@ -5,7 +5,7 @@ title: Home
 
 ## Introduction
 
-
+{% if site.title == 'KF6009' %}
 <p class="lead">
 This module is about the theory and practice of modelling,
 specification and analysis for the development of computer software. You will
@@ -15,7 +15,15 @@ construct, analyse and refine your own system models. In addition, you will
 gain experience with state-of- the-art software engineering tools for design
 and analysis.
 </p>
-
+{% elsif site.title == 'CM0604' %}
+<p class="lead">
+This module is designed to serve as an introduction to formal methods for
+specifying, designing and reasoning about embedded systems. The module uses
+state-of-the-art tools and techniques, including TLA+, UPPAAL and PRISM. It
+emphasises the importance of constructing and analysing models in the early
+stages of system development.
+</p>
+{% endif %}
 
 <img src="assets/images/cm0604_image.png" alt="Embedded systems tools" class="img-responsive center-block"/>
 Lectures are the main vehicle by which you will be introduced to fundamental
@@ -36,14 +44,14 @@ temporal and security aspects of system behaviour.
   liveness properties: deadlock freedom, fairness, bounded response, security.
 + *Analysis* - principles of model-checking, simulation, and static analysis
 for reasoning about system behaviour.
-+ *Tools* - use of tools, e.g. TLA+, Uppaal, Spin, PRISM, and evaluation of their
++ *Tools* - use of tools, e.g. TLA+, Uppaal, PRISM, and evaluation of their
   outputs.
   
 ## Module Team
 
 |   |    |
 |---|:---|
-|Module Tutor      | [David Kendall](http://www.hesabu.net/davidkendall/)
+|Module Tutor      | [David Kendall](https://davidkendall.github.io/)
 |Lecturer &nbsp;  | [Alun Moon](http://computing.northumbria.ac.uk/staff/cgam1)|
 
 
@@ -55,7 +63,7 @@ for reasoning about system behaviour.
 **Lab/Seminar**   | Fri 16.00-18.00 CIS 202
 
 <p class="text-info">
-You should attend the lecture session a lab/seminar session every week.
+You should attend the lecture session and the lab/seminar session every week.
 </p>
 
 ## Synopsis
@@ -87,17 +95,17 @@ course of the module.
 | Week   | W/c   | Lecture    | Practical   |
 | :----: | :---: | :--------: | :---------: |
 **1** | 01 Oct &nbsp; | [Module Introduction and Overview <br/> A first TLA+ specification]({{site.baseurl}}{{site.raurl}}/A01.pdf)  <br/> *Reading:* [NRZ+14]({{site.baseurl}}{{site.raurl}}/reading/nrz+14.pdf), [HOL14]({{site.baseurl}}{{site.raurl}}/reading/hol14.pdf) <br/> *Video:* [VID01](http://lamport.azurewebsites.net/video/intro.html), [VID02](http://lamport.azurewebsites.net/video/smintla.html) | [First steps with the TLA+ Toolbox](L01.html) 
-**2** | 08-Oct &nbsp; | [TLA+ : Functions, Tuples, Records, Strings <br/> Stuttering; Temporal Logic]({{site.baseurl}}{{site.raurl}}/A02.pdf) <br/> *Reading:* [[LEV95]({{site.baseurl}}{{site.raurl}}/reading/lev95.pdf)]| [More TLA+](L02.html)
+**2** | 08-Oct &nbsp; | [TLA+ : Functions, Tuples, Records, Strings <br/> Stuttering; Temporal Logic]({{site.baseurl}}{{site.raurl}}/A02.pdf) <br/> *Reading:* [[LEV95]({{site.baseurl}}{{site.raurl}}/reading/lev95.pdf)] <br/> *Video:* [VID05](http://lamport.azurewebsites.net/video/video5.html)| [More TLA+](L02.html)
 **3** | 15-Oct &nbsp; | [Pluscal, Mutual Exclusion, Safety]({{site.baseurl}}{{site.raurl}}/A03.pdf) &nbsp; | [Modelling mutex protocols in Pluscal, Checking safety properties.](L03.html)
 **4** | 22-Oct &nbsp; | [More Temporal logic, Liveness, Fairness <br/> Specification patterns]({{site.baseurl}}{{site.raurl}}/A04.pdf) <br/> *Reading:* [[DAC99]({{site.baseurl}}{{site.raurl}}/reading/dac99.pdf)] [[SAC03]({{site.baseurl}}{{site.raurl}}/reading/sac03.pdf)] &nbsp; | [Temporal logic specification and analysis, Checking liveness properties of mutex](L04.html)
 **5** | 29-Oct &nbsp; | [Modelling communication via message channels <br/> Inside a model-checker]({{site.baseurl}}{{site.raurl}}/A05.pdf) | [Alternating bit protocol](L05.html)
 **6** | 05-Nov &nbsp; | [Modelling and analysis of security protocols.]({{site.baseurl}}{{site.raurl}}/A06.pdf)  &nbsp; | [Modelling and analysis of security protocols](L06.html)
 **7** | 12-Nov &nbsp; | TLA+ case study: distributed termination | Introduction to the assignment
-**8** | 19-Nov &nbsp; | [Modelling real-time systems: timed automata and timed transition systems]({{site.baseurl}}{{site.raurl}}/A08.pdf) <br/> [[Uppaal tutorial]({{site.baseurl}}{{site.raurl}}/reading/uppaal-tutorial2004.pdf)] | [Introduction to Uppaal]({{site.baseurl}}{{site.raurl}}/L08.pdf)
-**9** | 26-Nov &nbsp; | [Networks of timed automata. Specifying real-time properties.]({{site.baseurl}}{{site.raurl}}/A09.pdf) <br/> *Reading:* [[HOL01]({{site.baseurl}}{{site.raurl}}/reading/hol01.pdf)]&nbsp; | [Modelling a box sorter]({{site.baseurl}}{{site.raurl}}/L09.pdf) [[Model]({{site.baseurl}}{{site.raurl}}/resources/box-sorter.xml)]
-**10** | 03-Dec &nbsp; | [Uppaal language extensions and case study]({{site.baseurl}}{{site.raurl}}/A10.pdf) [[Case study resources]({{site.baseurl}}{{site.raurl}}/resources/case_study.zip)] &nbsp; | [Modelling and verifying a real-time communication protocol]({{site.baseurl}}{{site.raurl}}/L10.pdf) [[Model]({{site.baseurl}}{{site.raurl}}/resources/ttp.xml)]
-**11** | 10-Dec &nbsp; | [Principles of automata-theoretic verification of real-time systems]({{site.baseurl}}{{site.raurl}}/A11.pdf) &nbsp; | [Synthesising a schedule]({{site.baseurl}}{{site.raurl}}/L11.pdf) [[Model]({{site.baseurl}}{{site.raurl}}/resources/bridge.xml)]; Assignment support
-**12** | 17-Dec &nbsp; | [Introduction to probabilistic modelling]({{site.baseurl}}{{site.raurl}}/A12.pdf) &nbsp; | [Using PRISM]({{site.baseurl}}{{site.raurl}}/L12.pdf); Assignment support
+**8** | 19-Nov &nbsp; | [Modelling real-time systems: timed automata and timed transition systems]({{site.baseurl}}{{site.raurl}}/A08.pdf) <br/> [[Uppaal tutorial]({{site.baseurl}}{{site.raurl}}/reading/uppaal-tutorial2004.pdf)] | [Introduction to Uppaal](L08.html)
+**9** | 26-Nov &nbsp; | [Networks of timed automata. Specifying real-time properties.]({{site.baseurl}}{{site.raurl}}/A09.pdf) <br/> *Reading:* [[HOL01]({{site.baseurl}}{{site.raurl}}/reading/hol01.pdf)]&nbsp; | [Modelling a box sorter](L09.html) [[Model]({{site.baseurl}}{{site.raurl}}/resources/box-sorter.xml)]
+**10** | 03-Dec &nbsp; | [Uppaal language extensions and case study]({{site.baseurl}}{{site.raurl}}/A10.pdf) [[Case study resources]({{site.baseurl}}{{site.raurl}}/resources/case_study.zip)] &nbsp; | [Modelling and verifying a real-time communication protocol](L10.html) [[Model]({{site.baseurl}}{{site.raurl}}/resources/ttp.xml)]
+**11** | 10-Dec &nbsp; | [Principles of automata-theoretic verification of real-time systems]({{site.baseurl}}{{site.raurl}}/A11.pdf) &nbsp; | [Synthesising a schedule](L11.html) [[Model]({{site.baseurl}}{{site.raurl}}/resources/bridge.xml)]; Assignment support
+**12** | 17-Dec &nbsp; | [Introduction to probabilistic modelling]({{site.baseurl}}{{site.raurl}}/A12.pdf) &nbsp; | [Using PRISM](L12.html); Assignment support
 
 <br/>
 
@@ -115,9 +123,9 @@ Summative assessment comprises:
 * a substantial exercise in specification, design and analysis in which students will be required to demonstrate both a practical ability to apply appropriate languages, techniques and tools, and also an understanding of the theoretical principles underlying their practice. This is a single assessment, contributing 100% of the
 module mark.
 
-The assessment specification will be made available to students in week 6 and will be discussed in the lab session that week. The work is due to be submitted via the elP (Blackboard) by 23.59 on Thursday of week 12. Feedback and provisional marks will be provided to students by email within 20 working days of submission.
+The assessment specification will be made available to students in week 8 and will be discussed in the lab session that week. The work is due to be submitted via the elP (Blackboard) by 23.59 on Thursday 17 January 2019. Feedback and provisional marks will be provided to students by email within 20 working days of submission.
 
-<a class="btn btn-large btn-primary" href="{{site.baseurl}}{{site.raurl}}/assgn.pdf"><i class="icon-upload-alt"></i>Download Assignment Specification</a>
+<!--<a class="btn btn-large btn-primary" href="{{site.baseurl}}{{site.raurl}}/assgn.pdf"><i class="icon-upload-alt"></i>Download Assignment Specification</a>-->
 
 Assessment is subject to the Academic Regulations for Taught Awards. You should ensure that you are familiar with the latest regulations, particularly with regard to academic misconduct and late submission of work.
 
@@ -227,32 +235,32 @@ href="https://en.wikipedia.org/wiki/TLA%2B">Wikipedia</a>) </p>
 (<a href="{{site.baseurl}}{{site.raurl}}/summary-standalone.pdf">Local copy</a>)</li>
 </ul>
 
-<p> <a href="http://spinroot.com/spin/whatispin.html">
-<img class="image-responsive pull-right"
-src="assets/images/spinlogo2_medium.gif" alt="SPIN Logo"    width="80" /></a>
-</p> <p> <strong><a
-href="http://spinroot.com/spin/whatispin.html">SPIN</a></strong><br/> "Spin is
-a popular open-source software tool, used by thousands of people worldwide,
-that can be used for the formal verification of distributed software systems.
-The tool was developed at Bell Labs in the original Unix group of the Computing
-Sciences Research Center, starting in
-1980. The software has been available freely since 1991, and continues to
-      evolve to keep pace with new developments in the field. In April 2002 the
-      tool was awarded the prestigious System Software Award for 2001 by the
-      ACM." [<a
-      href="http://awards.acm.org/award_winners/holzmann_1625680.cfm">Holzmann</a>]
-      </p> <p> The main focus of this module, in weeks 1-4, is on the theory
-      and practical application of this tool to the modelling and analysis of
-      embedded systems. It is essential that you use the tool extensively on a
-      variety of lab exercises. The tool is installed in PB Lab F1 on the Linux
-      machines. It is also available free for use on your own machines -- see
-      the <a href="http://spinroot.com/spin/Man/README.html">download</a>
-      instructions.  </p>
+<!--<p> <a href="http://spinroot.com/spin/whatispin.html">-->
+<!--<img class="image-responsive pull-right"-->
+<!--src="assets/images/spinlogo2_medium.gif" alt="SPIN Logo"    width="80" /></a>-->
+<!--</p> <p> <strong><a-->
+<!--href="http://spinroot.com/spin/whatispin.html">SPIN</a></strong><br/> "Spin is-->
+<!--a popular open-source software tool, used by thousands of people worldwide,-->
+<!--that can be used for the formal verification of distributed software systems.-->
+<!--The tool was developed at Bell Labs in the original Unix group of the Computing-->
+<!--Sciences Research Center, starting in-->
+<!--1980. The software has been available freely since 1991, and continues to-->
+<!--evolve to keep pace with new developments in the field. In April 2002 the-->
+<!--tool was awarded the prestigious System Software Award for 2001 by the-->
+<!--ACM." [<a-->
+<!--href="http://awards.acm.org/award_winners/holzmann_1625680.cfm">Holzmann</a>]-->
+<!--</p> <p> The main focus of this module, in weeks 1-4, is on the theory-->
+<!--and practical application of this tool to the modelling and analysis of-->
+<!--embedded systems. It is essential that you use the tool extensively on a-->
+<!--variety of lab exercises. The tool is installed in PB Lab F1 on the Linux-->
+<!--machines. It is also available free for use on your own machines -- see-->
+<!--the <a href="http://spinroot.com/spin/Man/README.html">download</a>-->
+<!--instructions.  </p>-->
 
-<ul>
-<li><a href="http://spinroot.com/spin/Man/3_SpinGUI.html">Getting Started with SPIN</a></li>
-<li><a href="http://spinroot.com/spin/Man/">SPIN online references</a></li>
-</ul>
+<!--<ul>-->
+<!--<li><a href="http://spinroot.com/spin/Man/3_SpinGUI.html">Getting Started with SPIN</a></li>-->
+<!--<li><a href="http://spinroot.com/spin/Man/">SPIN online references</a></li>-->
+<!--</ul>-->
 
 <p>
   <a href="http://www.uppaal.org">
