@@ -95,8 +95,8 @@ course of the module.
 | Week   | W/c   | Lecture    | Practical   |
 | :----: | :---: | :--------: | :---------: |
 **1** | 01 Oct &nbsp; | [Module Introduction and Overview <br/> A first TLA+ specification]({{site.baseurl}}{{site.raurl}}/A01.pdf)  <br/> *Reading:* [NRZ+14]({{site.baseurl}}{{site.raurl}}/reading/nrz+14.pdf), [HOL14]({{site.baseurl}}{{site.raurl}}/reading/hol14.pdf) <br/> *Video:* [VID01](http://lamport.azurewebsites.net/video/intro.html), [VID02](http://lamport.azurewebsites.net/video/smintla.html) | [First steps with the TLA+ Toolbox](L01.html) 
-**2** | 08-Oct &nbsp; | [TLA+ : Functions, Tuples, Records, Strings <br/> Stuttering; Temporal Logic]({{site.baseurl}}{{site.raurl}}/A02.pdf) <br/> *Reading:* [[LEV95]({{site.baseurl}}{{site.raurl}}/reading/lev95.pdf)] <br/> *Video:* [VID05](http://lamport.azurewebsites.net/video/video5.html)| [More TLA+](L02.html)
-**3** | 15-Oct &nbsp; | [Pluscal, Mutual Exclusion, Safety]({{site.baseurl}}{{site.raurl}}/A03.pdf) &nbsp; | [Modelling mutex protocols in Pluscal, Checking safety properties.](L03.html)
+**2** | 08-Oct &nbsp; | [TLA+ : Functions]({{site.baseurl}}{{site.raurl}}/A02.pdf) <br/> *Reading:* [[LEV95]({{site.baseurl}}{{site.raurl}}/reading/lev95.pdf)] <br/> *Video:* [VID04](https://lamport.azurewebsites.net/video/video4.html), [VID05](http://lamport.azurewebsites.net/video/video5.html)| [More TLA+](L02.html)
+**3** | 15-Oct &nbsp; | [TLA+ : Tuples, Strings, Records; Pluscal]({{site.baseurl}}{{site.raurl}}/A03.pdf) &nbsp; | [Pluscal, TLA+, TLC: Essential modelling techniques and invariant checking](L03.html)
 **4** | 22-Oct &nbsp; | [More Temporal logic, Liveness, Fairness <br/> Specification patterns]({{site.baseurl}}{{site.raurl}}/A04.pdf) <br/> *Reading:* [[DAC99]({{site.baseurl}}{{site.raurl}}/reading/dac99.pdf)] [[SAC03]({{site.baseurl}}{{site.raurl}}/reading/sac03.pdf)] &nbsp; | [Temporal logic specification and analysis, Checking liveness properties of mutex](L04.html)
 **5** | 29-Oct &nbsp; | [Modelling communication via message channels <br/> Inside a model-checker]({{site.baseurl}}{{site.raurl}}/A05.pdf) | [Alternating bit protocol](L05.html)
 **6** | 05-Nov &nbsp; | [Modelling and analysis of security protocols.]({{site.baseurl}}{{site.raurl}}/A06.pdf)  &nbsp; | [Modelling and analysis of security protocols](L06.html)
@@ -233,6 +233,7 @@ href="https://en.wikipedia.org/wiki/TLA%2B">Wikipedia</a>) </p>
 <li><a href="https://tla.msr-inria.inria.fr/tlatoolbox/doc/contents.html">TLA+ Toolbox User's Guide</a></li>
 <li><a href="https://lamport.azurewebsites.net/tla/summary-standalone.pdf">TLA+ Cheat Sheet</a>
 (<a href="{{site.baseurl}}{{site.raurl}}/summary-standalone.pdf">Local copy</a>)</li>
+<li><a href="https://lamport.azurewebsites.net/video/videos.html">TLA+ Video Course</a></li>
 </ul>
 
 <!--<p> <a href="http://spinroot.com/spin/whatispin.html">-->
@@ -285,11 +286,11 @@ Department of Computer Science at Aalborg University in Denmark."
 </p>
 
 <p>
-The main focus of this module, in weeks 5-8, is on the theory and
+The main focus of this module, in weeks 8-11, is on the theory and
 practical application of this tool to the modelling and analysis of
 embedded systems. It is essential that you use the tool extensively on
-a variety of lab exercises. The tool is installed in PB Lab F1 on the
-Linux machines. It is also available free for use on your own machines.
+a variety of lab exercises. The tool is installed on the
+Linux machines in the CIS labs on the 2nd floor. It is also available free for use on your own machines.
 There is a tutorial that gives a good
 introduction to the theory and practice of modelling with timed
 automata and analysis with the Uppaal tool.
