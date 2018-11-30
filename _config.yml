@@ -6,12 +6,12 @@ kramdown:
   auto_ids: true
   syntax_highlighter: rouge
 
-title: CM0604
-subtitle: Embedded systems specification and design
+title: KF6009
+subtitle: Model-based design and verification
 authors: David Kendall, Alun Moon
 copyyear: 2015-2018
 url: http://hesabu.net
-baseurl: /cm0604
+baseurl: /kf6009
 raurl: /assets/ra
 rraurl: /assets/ra
 #url: http://localhost:4000

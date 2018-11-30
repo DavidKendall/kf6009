@@ -102,10 +102,9 @@ course of the module.
 **6** | 05-Nov &nbsp; | [Modelling communication via message channels]({{site.baseurl}}{{site.raurl}}/A06.pdf) | [Alternating bit protocol](L06.html)
 **7** | 12-Nov &nbsp; | [Modelling real-time systems: timed automata and timed transition systems]({{site.baseurl}}{{site.raurl}}/A07.pdf) <br/> *Reading:* [[Uppaal tutorial](https://www.it.uu.se/research/group/darts/papers/texts/new-tutorial.pdf) ([Local copy]({{site.baseurl}}{{site.raurl}}/reading/uppaal-tutorial.pdf))] | [Introduction to Uppaal](L07.html) <br/> Introduction to the assignment
 **8** | 19-Nov &nbsp; | [Networks of timed automata. Specifying real-time properties.]({{site.baseurl}}{{site.raurl}}/A08.pdf) <br/> *Reading:* [[HOL01]({{site.baseurl}}{{site.raurl}}/reading/hol01.pdf)]&nbsp; | [Modelling a box sorter](L08.html) [[Model]({{site.baseurl}}{{site.raurl}}/resources/box-sorter.xml)]
-**9** | 26-Nov &nbsp; | [Uppaal language extensions and case study]({{site.baseurl}}{{site.raurl}}/A09.pdf) [[Case study resources]({{site.baseurl}}{{site.raurl}}/resources/case_study.zip)] &nbsp; | [Modelling and verifying a real-time communication protocol](L09.html) [[Model]({{site.baseurl}}{{site.raurl}}/resources/ttp.xml)]
-**10** | 03-Dec &nbsp; | [Principles of automata-theoretic verification of real-time systems]({{site.baseurl}}{{site.raurl}}/A10.pdf) &nbsp; | [Synthesising a schedule](L10.html) [[Model]({{site.baseurl}}{{site.raurl}}/resources/bridge.xml)]
+**9** | 26-Nov &nbsp; | [Uppaal language extensions and case study]({{site.baseurl}}{{site.raurl}}/A09.pdf) &nbsp; | [Modelling and verifying a real-time communication protocol](L09.html) [[Model]({{site.baseurl}}{{site.raurl}}/resources/ttp.xml)]
+**10** | 03-Dec &nbsp; | [Verification of timed automata]({{site.baseurl}}{{site.raurl}}/A10.pdf) &nbsp; | [Synthesising a schedule](L10.html) [[Model]({{site.baseurl}}{{site.raurl}}/resources/bridge.xml)]
 **11** | 10-Dec &nbsp; | [Modelling and analysis of security protocols.]({{site.baseurl}}{{site.raurl}}/A11.pdf)  &nbsp; | [Modelling and analysis of security protocols](L11.html) <br/> Assignment support
-
 **12** | 17-Dec &nbsp; | [Introduction to probabilistic modelling]({{site.baseurl}}{{site.raurl}}/A12.pdf) &nbsp; | [Using PRISM](L12.html) <br/> Assignment support
 
 <br/>
@@ -126,8 +125,11 @@ module mark.
 
 The assessment specification will be made available to students in week 8 and will be discussed in the lab session that week. The work is due to be submitted via the elP (Blackboard) by 23.59 on Thursday 17 January 2019. Feedback and provisional marks will be provided to students by email within 20 working days of submission.
 
-<!--<a class="btn btn-large btn-primary" href="{{site.baseurl}}{{site.raurl}}/assgn.pdf"><i class="icon-upload-alt"></i>Download Assignment Specification</a>-->
-
+{% if site.title == 'KF6009' %}
+<a class="btn btn-large btn-primary" href="{{site.baseurl}}{{site.raurl}}/assgn_kf6009.pdf"><i class="icon-upload-alt"></i>Download Assignment Specification</a>
+{% elsif site.title == 'CM0604' %}
+<a class="btn btn-large btn-primary" href="{{site.baseurl}}{{site.raurl}}/assgn_cm0604.pdf"><i class="icon-upload-alt"></i>Download Assignment Specification</a>
+{% endif %}
 Assessment is subject to the Academic Regulations for Taught Awards. You should ensure that you are familiar with the latest regulations, particularly with regard to academic misconduct and late submission of work.
 
 You can view the latest module evaluation document
