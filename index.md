@@ -104,8 +104,8 @@ course of the module.
 **8** | 19-Nov &nbsp; | [Networks of timed automata. Specifying real-time properties.]({{site.baseurl}}{{site.raurl}}/A08.pdf) <br/> *Reading:* [[HOL01]({{site.baseurl}}{{site.raurl}}/reading/hol01.pdf)]&nbsp; | [Modelling a box sorter](L08.html) [[Model]({{site.baseurl}}{{site.raurl}}/resources/box-sorter.xml)]
 **9** | 26-Nov &nbsp; | [Uppaal language extensions and case study]({{site.baseurl}}{{site.raurl}}/A09.pdf) &nbsp; | [Modelling and verifying a real-time communication protocol](L09.html) [[Model]({{site.baseurl}}{{site.raurl}}/resources/ttp.xml)]
 **10** | 03-Dec &nbsp; | [Verification of timed automata]({{site.baseurl}}{{site.raurl}}/A10.pdf) &nbsp; | [Synthesising a schedule](L10.html) [[Model]({{site.baseurl}}{{site.raurl}}/resources/bridge.xml)]
-**11** | 10-Dec &nbsp; | [Modelling and analysis of security protocols.]({{site.baseurl}}{{site.raurl}}/A11.pdf)  &nbsp; | [Modelling and analysis of security protocols](L11.html) <br/> Assignment support
-**12** | 17-Dec &nbsp; | [Introduction to probabilistic modelling]({{site.baseurl}}{{site.raurl}}/A12.pdf) &nbsp; | [Using PRISM](L12.html) <br/> Assignment support
+**11** | 10-Dec &nbsp; | [Modelling and analysis of security protocols.]({{site.baseurl}}{{site.raurl}}/A11.pdf) <br/> *Reading:* [[RSG00+ (Chapter 0)]({{site.baseurl}}{{site.raurl}}/reading/rsg+00.pdf)] &nbsp; | [Modelling and analysis of security protocols](L11.html) <br/> Assignment support
+**12** | 17-Dec &nbsp; | [Going further: statistical model checking, probabilistic and hybrid systems]({{site.baseurl}}{{site.raurl}}/A12.pdf) <br/> *Reading:* [[DLL+18]({{site.baseurl}}{{site.raurl}}/reading/dll+18.pdf)] &nbsp; | [Models L01-L11](https://github.com/DavidKendall/cm0605_kf6009_models) <br/> Assignment support
 
 <br/>
 
